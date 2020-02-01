@@ -1,9 +1,15 @@
-html { 
+body { 
   background: url('background.jpg') no-repeat fixed; 
   background-size: cover;
 }
 
+img {
+  width: 100%;
+  height: 410px;
+}
+
 .App-header {
+  background-color: transparent;
   min-height: 10vh;
   display: flex;
   margin-left: 2vmin;
@@ -28,41 +34,30 @@ input[type="text"] {
   outline: none;
 }
 
-.recipes__box {
-  background: #fff;
+.movie-card {
+  background-color: rgb(255, 255, 255, 0.3);
   padding-bottom: 2rem;
-  border-radius: 5px;
-  box-shadow: -1px 2px 34px -13px rgba(0,0,0,0.75);
   text-align: left;
-  overflow: hidden;
 }
 
-.recipe__text {
+.movie-card-info {
   margin-left: 15px;
+  color: white;
+  padding: 1rem 0 0 0;
+  font-size: calc(1px + 2vmin);
 }
 
-.recipes__title {
-  color: #e74c3c;
-  text-transform: uppercase;
-  font-size: 1.1rem;
-  padding: 1.8rem 0 0.2rem 0;
-}
-
-.recipes__subtitle {
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-}
-
-.recipe_buttons {
-  border: solid 2px #e74c3c;
+.movie-card-button {
+  margin-left: 15px;
   background: transparent;
-  padding: 0.4rem 0.6rem;
+  border: 2px solid white;
+  font-weight: bold;
+  color: white;
+  /* padding: 0.4rem 0.6rem;
   margin: 0 0.2rem;
   border-radius: 1px;
   font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 500;
-  margin-left: 0.7rem;
+  margin-left: 0.7rem; */
 }
