@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Movies = props => (
     <div className='container'>
@@ -15,7 +16,12 @@ const Movies = props => (
                                 <h5 className='movie-card-title'>{movie.title.length < 30 ? `${movie.title}` : `${movie.title.substring(0,30)}...`}</h5>
                                 <p>({movie.release_date})</p>
                             </div>
-                            <button className='movie-card-button'>Details</button>
+                            <button className='movie-card-button'>
+                                <Link to={{ 
+                                    pathname: `/movie/${movie.id}`,
+                                    state: {movie: movie.title}
+                                }}>Details</Link>
+                            </button>
                         </div>
                     </div>
                 );
