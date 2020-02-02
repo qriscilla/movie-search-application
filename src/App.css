@@ -1,6 +1,7 @@
 body { 
   background: url('background.jpg') no-repeat fixed; 
   background-size: cover;
+  font-family: 'Cantarell', sans-serif;
 }
 
 img {
@@ -12,9 +13,21 @@ img {
   background-color: transparent;
   min-height: 10vh;
   display: flex;
-  margin-left: 2vmin;
   float: left;
   align-items: center;
+}
+
+.search-button {
+  float: left;
+}
+
+input {
+  width: 100%;
+}
+
+span {
+  display: block;
+  overflow: hidden;
 }
 
 .search-button, .search-input {
@@ -22,8 +35,9 @@ img {
   border: none;
   font-weight: bold;
   font-size: calc(10px + 2vmin);
-  letter-spacing: 1px;
   color: rgb(255, 255, 255, 0.5);
+  margin-top: calc(5px + 2vmin);
+  margin-left: calc(5px + 2vmin);
 }
 
 .fontIcon, ::placeholder {
@@ -53,11 +67,5 @@ input[type="text"] {
   border: 2px solid white;
   font-weight: bold;
   color: white;
-  /* padding: 0.4rem 0.6rem;
-  margin: 0 0.2rem;
-  border-radius: 1px;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-left: 0.7rem; */
+  padding: 0.3rem 0.3rem 0.3rem 0.3rem;
 }

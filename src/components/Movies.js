@@ -12,7 +12,7 @@ const Movies = props => (
                                 alt={movie.title}>
                             </img>
                             <div className='movie-card-info'>
-                                <h5>{movie.title.length < 30 ? `${movie.title}` : `${movie.title.substring(0,30)}...`}</h5>
+                                <h5 className='movie-card-title'>{movie.title.length < 30 ? `${movie.title}` : `${movie.title.substring(0,30)}...`}</h5>
                                 <p>{movie.release_date}</p>
                             </div>
                             <button className='movie-card-button'>Details</button>
