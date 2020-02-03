@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import noImage from './noImage.png';
+import noImage from '../noImage.png';
 
 const Movies = props => (
     <div className='container'>

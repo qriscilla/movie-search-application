@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import noImage from './noImage.png';
+import noImage from '../noImage.png';
 
 const API_KEY = '37cbb44eaa2f92cdb9ef7ba91a012e48';
 

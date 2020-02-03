@@ -1,15 +1,15 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { HashRouter, Switch, Route } from 'react-router-dom';
 import App from '../App';
 import Movie from './Movie';
 
 const Router = () => (
-    <BrowserRouter>
+    <HashRouter>
         <Switch>
             <Route path='/' component={App} exact />
             <Route path='/movie/:id' component={Movie} />            
         </Switch>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default Router;
